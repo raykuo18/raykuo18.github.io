@@ -5,7 +5,7 @@ title: cv
 nav: true
 nav_order: 4
 # redirect_to: /assets/pdf/example_pdf.pdf
-redirect_to: /assets/pdf/my_cv.pdf
+redirect_to: /files/my_cv.pdf
 
 # layout: cv
 # permalink: https://drive.google.com/file/d/1rjSab6qaryjmgTpazxhNHsnJAdav7Kcr/view?usp=sharing
