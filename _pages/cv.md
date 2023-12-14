@@ -1,13 +1,14 @@
 ---
 layout: default
-permalink: /assets/pdf/Ray_CV_v2.pdf
+permalink: /cv/
 title: cv
 nav: true
 nav_order: 4
-# redirect_to: /assets/pdf/Ray_CV_v2.pdf
+# redirect_to: /assets/pdf/example_pdf.pdf
+redirect_to: /assets/pdf/my_cv.pdf
 
 # layout: cv
-# permalink: /cv/
+# permalink: https://drive.google.com/file/d/1rjSab6qaryjmgTpazxhNHsnJAdav7Kcr/view?usp=sharing
 # title: cv
 # nav: true
 # nav_order: 4
