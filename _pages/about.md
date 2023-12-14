@@ -25,5 +25,6 @@ social: true  # includes social icons at the bottom of the page
 
 <!-- Link to your social media connections, too. This theme is set up to use [Font Awesome icons](http://fortawesome.github.io/Font-Awesome/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them. -->
 
-[My CV](https://drive.google.com/file/d/1rjSab6qaryjmgTpazxhNHsnJAdav7Kcr/view?usp=sharing)
+<!-- [My CV](https://drive.google.com/file/d/1rjSab6qaryjmgTpazxhNHsnJAdav7Kcr/view?usp=sharing) -->
+
 More content coming soon!
