@@ -6,8 +6,8 @@ subtitle: <a href='https://ai.inventec.com/en/'>AI Researcher, Inventec Corp., T
 
 profile:
   align: right
-  image: crop.jpg
-  image_circular: true # crops the image to make it circular
+  image: my_photo.jpg
+  image_circular: false # crops the image to make it circular
   more_info: >
     <p>AI Center, N0. 166, Sec 4, Chengde Rd.</p>
     <p>Shihlin District, Taipei 11167, Taiwan</p>
