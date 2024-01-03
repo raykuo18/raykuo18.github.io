@@ -26,4 +26,4 @@ social: true  # includes social icons at the bottom of the page
 
 <!-- [My CV](https://drive.google.com/file/d/1rjSab6qaryjmgTpazxhNHsnJAdav7Kcr/view?usp=sharing) -->
 
-Hi, I'm [Your Name], an AI researcher at Inventec Corporation, Taipei. I graduated with a B.S. in Electrical Engineering from NTU in 2023. My research spans few-shot learning, vision-language models, and algorithm-hardware co-design. Currently, I focus on distilling vision-language models to enhance AI efficiency. Explore my work and journey on this site!
+Hi, I'm Shang-Jui (Ray) Kuo, an AI researcher at Inventec Corporation, Taipei. I graduated with a B.S. in Electrical Engineering from NTU in 2023. My research spans few-shot learning, vision-language models, and algorithm-hardware co-design. Currently, I focus on distilling vision-language models to enhance AI efficiency. Explore my work and journey on this site!
