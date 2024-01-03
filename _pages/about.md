@@ -1,21 +1,20 @@
 ---
 layout: about
-title: about
+title: Home
 permalink: /
-subtitle: AI Researcher, Inventec Corp., Taiwan # <a href='#'>AI Researcher, Inventec Corp., Taiwan</a> # :envelope:raykuo.sj@gmail.com
+subtitle: <a href='https://ai.inventec.com/en/'>AI Researcher, Inventec Corp., Taiwan</a> # :envelope:raykuo.sj@gmail.com
 
 profile:
   align: right
   image: crop.jpg
   image_circular: true # crops the image to make it circular
-  more_info: # >
-    # <p>555 your office number</p>
-    # <p>123 your address street</p>
-    # <p>Your City, State 12345</p>
+  more_info: >
+    <p>AI Center, N0. 166, Sec 4, Chengde Rd.</p>
+    <p>Shihlin District, Taipei 11167, Taiwan</p>
 
 news: false  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
-selected_papers: false # includes a list of papers marked as "selected={true}"
+selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
@@ -27,4 +26,4 @@ social: true  # includes social icons at the bottom of the page
 
 <!-- [My CV](https://drive.google.com/file/d/1rjSab6qaryjmgTpazxhNHsnJAdav7Kcr/view?usp=sharing) -->
 
-More content coming soon!
+Hi, I'm [Your Name], an AI researcher at Inventec Corporation, Taipei. I graduated with a B.S. in Electrical Engineering from NTU in 2023. My research spans few-shot learning, vision-language models, and algorithm-hardware co-design. Currently, I focus on distilling vision-language models to enhance AI efficiency. Explore my work and journey on this site!
