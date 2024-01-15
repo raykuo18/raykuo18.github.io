@@ -176,6 +176,14 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
+  teaching:
+    output: true
+    permalink: /teaching/:path/
+  # life:
+  #   output: true
+  #   permalink: /life/:path/
+
+
 
 announcements:
   enabled: true
