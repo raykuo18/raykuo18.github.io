@@ -2,33 +2,67 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  PhD Student, Computer Science · Stony Brook University ·
+  <a href="https://paolacascante.com/lab/">SPELL Lab</a>
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: my_photo.jpg
+  image_circular: false
   more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+    <p>Advised by <a href="https://paolacascante.com/">Prof. Paola Cascante-Bonilla</a></p>
+    <p>Stony Brook, NY</p>
 
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+selected_papers: true
+social: true
 
 announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  enabled: false
 
 latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+  enabled: false
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I am a PhD student in Computer Science at Stony Brook University,
+advised by [Prof. Paola Cascante-Bonilla](https://paolacascante.com/)
+in the [SPELL Lab](https://paolacascante.com/lab/). Before starting
+my PhD, I was an AI researcher and AI accelerator engineer at
+[Inventec Corporation](https://www.inventec.com/en/) in Taipei,
+working on medical image segmentation and NPU IP design. I received
+my B.S. in Electrical Engineering from
+[National Taiwan University](https://www.ntu.edu.tw/english/) in 2023.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+I am broadly interested in fundamental research that questions
+established design choices in AI. Not "how do we improve X" but
+"should X exist in this form at all."
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+My work is currently organized around vision-language models as a
+unifying thread. I first examined the vision side: are Vision
+Transformers actually the right backbone for VLMs, or is this a
+historical default worth revisiting? My paper on this found that SSM
+backbones, under the same pretraining budget, provide substantially
+stronger spatial grounding while remaining competitive on open-ended
+VQA — and can match or outperform much larger ViT-based encoders on
+localization benchmarks. I am now turning to the language side, asking
+whether the standard tokenization pipeline is the right input
+interface, particularly for writing systems it was never designed for.
+Both questions share the same structure: a design choice made under
+historical constraints that is worth revisiting from first principles.
+And together, they point to something deeper — vision and language are
+currently processed through very different pipelines and combined in
+ways that feel more pragmatic than principled. I am drawn to research
+that asks whether there is a more natural, unified interface for
+multiple modalities, and I see vision-language as the starting point
+of a longer journey toward understanding how AI systems should process
+the world across any modality.
+
+My background in hardware and systems gives me a particular lens for
+identifying these opportunities. Many foundational design choices in
+deep learning sit at the boundary of what was theoretically motivated
+and what was computationally practical at the time, and as systems
+evolve, some of those constraints quietly become legacy assumptions.
+I am drawn to research at exactly this boundary: close enough to
+systems to recognize where constraints came from, but standing firmly
+on the AI side to propose alternatives the broader community can
+build on.
