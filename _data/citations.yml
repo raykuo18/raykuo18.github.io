@@ -1,11 +1,11 @@
 metadata:
-  last_updated: '2026-04-10'
+  last_updated: '2026-04-24'
 papers:
   0NqkDTcAAAAJ:u-x6o8ySG0sC:
     citations: 4
     title: Improving limited supervised foot ulcer segmentation using cross-domain augmentation
     year: '2024'
   0NqkDTcAAAAJ:u5HHmVD_uO8C:
-    citations: 3
+    citations: 4
     title: Improving limited supervised foot ulcer segmentation using cross-domain augmentation strategies
     year: '2024'
