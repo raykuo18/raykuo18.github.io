@@ -1,11 +1,11 @@
 ---
 layout: page
-title: projects
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
-nav: false
+description: Research and engineering projects across vision-language models, language modeling, ML accelerators, and applied AI.
+nav: true
 nav_order: 3
-display_categories: [work, fun]
+display_categories: [research, industry]
 horizontal: false
 ---
 
@@ -15,7 +15,7 @@ horizontal: false
   <!-- Display categorized projects -->
   {% for category in page.display_categories %}
   <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
+    <h2 class="category">{{ category | capitalize }}</h2>
   </a>
   {% assign categorized_projects = site.projects | where: "category", category %}
   {% assign sorted_projects = categorized_projects | sort: "importance" %}

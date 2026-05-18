@@ -3,7 +3,7 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Shang-Jui (Ray)
+first_name: Shang-Jui Ray
 last_name: Kuo
 contact_note: >
   Email is the best way to reach me.
@@ -12,7 +12,7 @@ description: >
   Fundamental AI research questioning established design choices
   in vision-language models and beyond.
 footer_text: >
-  © 2026 Shang-Jui (Ray) Kuo. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  © 2026 Shang-Jui Ray Kuo. Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
 keywords: jekyll, jekyll-theme, academic-website, portfolio-website # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ⚛️ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -279,7 +279,7 @@ display_categories: ["external-services"] # these categories will be displayed o
 
 scholar:
   last_name: [Kuo]
-  first_name: [Shang-Jui, S.-J., S.]
+  first_name: [Shang-Jui Ray, Shang-Jui, S.-J., S.]
 
   style: apa
   locale: en

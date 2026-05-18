@@ -3,7 +3,7 @@
 
 @article{kuo2026vlm,
   title        = {Do {VLMs} Need Vision Transformers? {Evaluating} State Space Models as Vision Encoders},
-  author       = {Kuo, Shang-Jui and Cascante-Bonilla, Paola},
+  author       = {Kuo, Shang-Jui Ray and Cascante-Bonilla, Paola},
   year         = {2026},
   note         = {Under review},
   arxiv        = {2603.19209},
@@ -25,7 +25,7 @@
 
 @inproceedings{kuo2024footulcer,
   title        = {Improving Limited Supervised Foot Ulcer Segmentation Using Cross-Domain Augmentation},
-  author       = {Kuo, Shang-Jui and Huang, Po-Han and Lin, Chia-Ching
+  author       = {Kuo*, Shang-Jui and Huang*, Po-Han and Lin, Chia-Ching
                   and Li, Jeng-Lin and Chang, Ming-Ching},
   booktitle    = {IEEE International Conference on Acoustics, Speech and
                   Signal Processing (ICASSP)},
@@ -34,9 +34,14 @@
   website      = {https://ai.inventec.com/en/ai/improving-limited-supervised-foot-ulcer-segmentation-using-cross-domain-augmentation/},
   selected     = {true},
   preview      = {icassp_thumb.png},
-  abstract     = {We propose a cross-domain augmentation methodology to
-                  improve wound segmentation under limited supervision,
-                  achieving a 34% Dice score improvement in real hospital
-                  deployment.},
+  abstract     = {We propose a two-stage cross-domain augmentation
+                  methodology (TransMix) for foot-ulcer segmentation under
+                  limited supervision: Augmented Global Pre-training on the
+                  source-domain skin-lesion dataset HAM10000, followed by
+                  Localized CutMix Fine-tuning on the target-domain FUSeg
+                  benchmark. On FUSeg the method lifts Dice from 74.83% to
+                  85.26% using only 40 labeled images (+10.43% over the
+                  U-Net baseline), and reaches 91.08% at the full 810-image
+                  scale with a lighter ResNet-50 backbone.},
   additional_info = {. &#42; Equal contribution (Kuo and Huang)},
 }

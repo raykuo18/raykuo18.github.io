@@ -1,81 +1,21 @@
 ---
 layout: page
-title: project 7
-description: with background image
-img: assets/img/4.jpg
-importance: 1
-category: work
-related_publications: true
+title: Stylus Trajectory CNN
+description: Lightweight CNN (10–50K params) for stylus-trajectory regression from capacitive sensors, deployed in the panel IC of a top IC design house. Sub-2-pixel accuracy, ~50% error reduction over the prior rule-based algorithm.
+img: assets/img/stylus_thumb.png
+importance: 7
+category: industry
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**Lightweight CNN for stylus trajectory regression on panel-IC hardware.** Inventec Corporation, Digital Center (AI-on-Chip team), 2023 — sole ML engineer on this sub-project.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+A convolution-based regression model that turns noisy capacitive-sensor readings into a stylus trajectory, replacing the existing rule-based on-chip algorithm. Deployed in the panel IC of a top IC design house. **Sub-2-pixel accuracy** at **10–50K parameters** (depending on hardware variant), **~50% error reduction** over the prior rule-based baseline that had been hand-tuned for years by domain experts.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**What this project actually shows.**
+- *Lightweight ML targeting embedded hardware.* The 10–50K-parameter budget was set by the panel IC's compute and memory envelope; the model was designed working backward from that constraint, not by shrinking a research model after the fact.
+- *Beating a tuned rule-based baseline in production.* ~50% error reduction over a domain-expert-tuned baseline is a meaningful applied-ML win — these baselines are usually hard to beat because they encode years of domain knowledge.
+- *End-to-end ownership of a shipped product feature.* Dataset construction from real sensor traces → model design under hardware constraints → training → evaluation against the production baseline → handoff for customer-IC integration.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+**Stack.** PyTorch for model design and training; a regression pipeline targeted at the pixel-accuracy metric the customer cared about; evaluation harness for apples-to-apples comparison against the on-chip rule-based algorithm.
 
-You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
-Say you wanted to write a bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+**Context.** This project ran out of Inventec's Digital Center (AI-on-Chip team), in parallel with the [ICASSP 2024 paper](/projects/3_project/) on cross-domain augmentation for foot-ulcer segmentation that ran out of Inventec's AI Center. Customer name and customer-product details are confidential.

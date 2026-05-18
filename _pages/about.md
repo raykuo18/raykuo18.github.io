@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: >
   PhD Student, Computer Science · Stony Brook University ·
@@ -10,9 +10,7 @@ profile:
   align: right
   image: my_photo.jpg
   image_circular: false
-  more_info: >
-    <p>Advised by <a href="https://paolacascante.com/">Prof. Paola Cascante-Bonilla</a></p>
-    <p>Stony Brook, NY</p>
+  more_info:
 
 selected_papers: true
 social: true
@@ -24,45 +22,39 @@ latest_posts:
   enabled: false
 ---
 
-I am a PhD student in Computer Science at Stony Brook University,
-advised by [Prof. Paola Cascante-Bonilla](https://paolacascante.com/)
-in the [SPELL Lab](https://paolacascante.com/lab/). Before starting
-my PhD, I was an AI researcher and AI accelerator engineer at
-[Inventec Corporation](https://www.inventec.com/en/) in Taipei,
-working on medical image segmentation and NPU IP design. I received
-my B.S. in Electrical Engineering from
+I am a PhD researcher at the SPELL Lab (Synthetic Perception and Learning Lab),
+Stony Brook University, advised by
+[Prof. Paola Cascante-Bonilla](https://paolacascante.com/). My research
+focuses on fundamental questions about the architectural choices AI
+systems have inherited and built on. Many of
+those choices were made when the practical constraints looked very
+different, and I work on rigorously comparing the defaults against the
+alternatives, whether those alternatives already exist or have to be
+designed for the comparison.
+
+My current work runs concurrent threads on both sides of the
+vision-language interface. On the vision side, I ask whether Vision
+Transformers are actually the right backbone for VLMs, or whether this
+is a historical default worth revisiting. On the language side, I ask
+whether the standard tokenization pipeline is the right input
+interface, particularly for writing systems it was never designed
+for. Underlying both is a deeper question: are there more natural
+ways for AI systems to process the modalities they take in, ways that
+fit both the structure of the data and the modern computing systems
+that run on it? My background in hardware and systems shapes how I
+work at this boundary.
+
+Before starting my PhD I was an AI researcher and AI accelerator
+engineer at [Inventec Corporation](https://www.inventec.com/en/) in
+Taipei, working on medical image segmentation and NPU IP design. I
+received my B.S. in Electrical Engineering from
 [National Taiwan University](https://www.ntu.edu.tw/english/) in 2023.
 
-I am broadly interested in fundamental research that questions
-established design choices in AI. Not "how do we improve X" but
-"should X exist in this form at all."
+<span style="color: #d97706; font-weight: bold;">Recent.</span> Our VLM-SSM vision-encoder paper was [featured on Hugging
+Face Daily Papers](https://huggingface.co/papers/2603.19209); the HF
+open-source team offered a ZeroGPU (A100) grant for a public demo. The
+work was also accepted as a poster at the SUNY AI Symposium 2026.
 
-My work is currently organized around vision-language models as a
-unifying thread. I first examined the vision side: are Vision
-Transformers actually the right backbone for VLMs, or is this a
-historical default worth revisiting? My paper on this found that SSM
-backbones, under the same pretraining budget, provide substantially
-stronger spatial grounding while remaining competitive on open-ended
-VQA — and can match or outperform much larger ViT-based encoders on
-localization benchmarks. I am now turning to the language side, asking
-whether the standard tokenization pipeline is the right input
-interface, particularly for writing systems it was never designed for.
-Both questions share the same structure: a design choice made under
-historical constraints that is worth revisiting from first principles.
-And together, they point to something deeper — vision and language are
-currently processed through very different pipelines and combined in
-ways that feel more pragmatic than principled. I am drawn to research
-that asks whether there is a more natural, unified interface for
-multiple modalities, and I see vision-language as the starting point
-of a longer journey toward understanding how AI systems should process
-the world across any modality.
-
-My background in hardware and systems gives me a particular lens for
-identifying these opportunities. Many foundational design choices in
-deep learning sit at the boundary of what was theoretically motivated
-and what was computationally practical at the time, and as systems
-evolve, some of those constraints quietly become legacy assumptions.
-I am drawn to research at exactly this boundary: close enough to
-systems to recognize where constraints came from, but standing firmly
-on the AI side to propose alternatives the broader community can
-build on.
+<span style="color: #d97706; font-weight: bold;">Research interests.</span> Vision-language models · state space models as
+vision encoders · tokenization and learned input representations ·
+multimodal learning · hardware-AI co-design.

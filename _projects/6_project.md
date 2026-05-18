@@ -1,80 +1,18 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: AI-Powered Beamforming Antenna
+description: 1st Place + Best Presentation at Inventec Hackathon 2023 — repurposing existing laptop WiFi antennas as sensors via AI, with zero hardware modifications.
+img: assets/img/beamforming_thumb.png
+importance: 6
+category: industry
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+**AI-Powered Beamforming Antenna System.** 2023 Inventec Hackathon Competition (Taipei, Taiwan). **1st Place + Best Presentation**, out of 300+ participants and 74 teams. Project lead and main AI contributor; partnered with an electromagnetics PhD (now a professor in Taiwan) on antenna design.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+**The winning move.** Inventec is a major Taiwanese laptop ODM/OEM positioning toward edge-AI on its shipping consumer lineup. The implicit ask of the hackathon was *find AI features that run on hardware Inventec already builds, not features that require new silicon.* The idea: every laptop already carries multiple WiFi antennas that nobody uses for sensing — AI can turn the multi-port signal into product-relevant state (human presence, behavior, beam direction) with **zero BOM change**.
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+**What we built.** Two integrated systems demonstrating the same core insight:
+- *Smart Scanning (AI-driven beamforming).* Collected signals from 5 antenna ports across a range of target directions; trained a regression model to predict target location from the 5-port pattern; inference loop steers the beam to maximize signal efficiency.
+- *Behavior Recognition (human sensing).* The human body perturbs antenna signal patterns in a state-dependent way. Trained a small MLP classifier on 5-port signals across labeled states (sitting, standing, walking away, someone nearby, no one present). Example application: auto-wake the screen when the user approaches the laptop.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+**What this project actually signals.** Product instinct (identifying the right idea for a specific business context), cross-disciplinary integration (AI + RF / antenna), and end-to-end execution + communication (pitch slides + recorded demo clips strong enough to win Best Presentation alongside 1st Place, judged by a non-technical panel). Not a research contribution — and the "hackathon" was a multi-week internal innovation challenge, not a 24-hour sprint.
