@@ -10,7 +10,10 @@ profile:
   align: right
   image: my_photo.jpg
   image_circular: false
-  more_info:
+  more_info: >
+    <p style="margin-bottom: 0.25rem;"><strong style="color: #d97706;">Seeking internships</strong></p>
+    <p style="margin-bottom: 0.25rem; font-size: 0.92em;">Research roles · Fall 2026 / Spring 2027 / Summer 2027</p>
+    <p style="font-size: 0.85em; color: #666;">(Reach out via email or LinkedIn.)</p>
 
 selected_papers: true
 social: true
